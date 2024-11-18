@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		474F180A2CEB2E42004C8321 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 474F18092CEB2E38004C8321 /* README.md */; };
+		474F18302CEB2F1C004C8321 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F182F2CEB2F1C004C8321 /* welcome.png */; };
+		474F18342CEB2F2C004C8321 /* signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F18332CEB2F2C004C8321 /* signup.png */; };
+		474F18362CEB2F36004C8321 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F18352CEB2F36004C8321 /* login.png */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		47F53EA42CEAA3A900BD59B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		474F18092CEB2E38004C8321 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		474F182F2CEB2F1C004C8321 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
+		474F18332CEB2F2C004C8321 /* signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup.png; sourceTree = "<group>"; };
+		474F18352CEB2F36004C8321 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		47F53E8D2CEAA3A700BD59B0 /* BookingHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookingHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F53EA32CEAA3A900BD59B0 /* BookingHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookingHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F53EAD2CEAA3A900BD59B0 /* BookingHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookingHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +99,10 @@
 		47F53E842CEAA3A700BD59B0 = {
 			isa = PBXGroup;
 			children = (
+				474F18092CEB2E38004C8321 /* README.md */,
+				474F18332CEB2F2C004C8321 /* signup.png */,
+				474F18352CEB2F36004C8321 /* login.png */,
+				474F182F2CEB2F1C004C8321 /* welcome.png */,
 				47F53E8F2CEAA3A700BD59B0 /* BookingHub */,
 				47F53EA62CEAA3A900BD59B0 /* BookingHubTests */,
 				47F53EB02CEAA3A900BD59B0 /* BookingHubUITests */,
@@ -225,6 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474F18302CEB2F1C004C8321 /* welcome.png in Resources */,
+				474F180A2CEB2E42004C8321 /* README.md in Resources */,
+				474F18342CEB2F2C004C8321 /* signup.png in Resources */,
+				474F18362CEB2F36004C8321 /* login.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
