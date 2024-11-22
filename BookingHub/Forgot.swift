@@ -18,9 +18,7 @@ class ForgotPasswordPage: UIViewController, UITextFieldDelegate {
 
     @IBAction func passEmailConfirmation(_ sender: Any) {
         
-        let confirmEmail = storyboard?.instantiateViewController(withIdentifier: "ConfirmEmail") as? ConfirmEmail
-        
-        guard let confirmEmail else { return }
+        let confirmEmail = pushView(viewController: ConfirmEmail(), identifier: "ConfirmEmail")
         
         navigationController?.pushViewController(confirmEmail, animated: true)
         
