@@ -30,15 +30,16 @@ class LoginPage: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         
         let tabController = pushView(viewController: UITabBarController(), identifier: "TabBarController")
-        navigationController?.pushViewController(tabController, animated: true)
         
         if let viewControllers = tabController.viewControllers,
                let profilePage = viewControllers[1] as? ProfilePage {
             
             // Access properties in ProfilePage
-            profilePage.receivedUsername = userName.text
-            profilePage.receivedPassword = password.text
-            }
+            profilePage.receivedUsername = userName.text == "" ? "Firstname" : userName.text
+            profilePage.receivedPassword = password.text == "" ? "Lastname" : password.text
+        }
+        
+        navigationController?.pushViewController(tabController, animated: true)
 
     }
     

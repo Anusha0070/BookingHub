@@ -26,6 +26,7 @@ class ProfilePage: UIViewController {
         
         userName.text = (receivedUsername ?? "Firstname" ) + " " + (receivedPassword ?? "LastName")
         
+        
     }
 
 
