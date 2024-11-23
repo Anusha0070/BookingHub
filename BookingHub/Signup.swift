@@ -19,7 +19,9 @@ class SignupPage: UIViewController {
 //        guard let login else { return }
 //        
 //        navigationController?.pushViewController(login, animated: true)
-        pushView(viewController: LoginPage() , identifier: "LoginPage")
+        let login = pushView(viewController: LoginPage() , identifier: "LoginPage")
+        
+        navigationController?.pushViewController(login, animated: true)
     }
     
 }

@@ -9,6 +9,6 @@ import UIKit
 struct Lists{
     var name: String
     var price: String
-   // var profileImage: UIImageView
+    var profileImage: UIImage
     
 }

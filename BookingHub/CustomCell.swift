@@ -14,6 +14,8 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var price: UILabel!
     
+    @IBOutlet weak var hotelImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

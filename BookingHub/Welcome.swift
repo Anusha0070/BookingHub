@@ -15,33 +15,28 @@ class WelcomePage: UIViewController {
     }
 
     @IBAction func signupButton(_ sender: Any) {
+            
+        let signup = pushView(viewController: SignupPage(), identifier: "SignupPage")
         
-//        let signup = storyboard?.instantiateViewController(withIdentifier: "SignupPage") as? SignupPage
-//        
-//        guard let signup else { return }
-//        
-//        navigationController?.pushViewController(signup, animated: true)
-        
-        pushView(viewController: SignupPage(), identifier: "SignupPage")
+        navigationController?.pushViewController(signup, animated: true)
     }
     
     
     @IBAction func loginButton(_ sender: Any) {
-//        let login = storyboard?.instantiateViewController(withIdentifier: "LoginPage") as? LoginPage
-//        
-//        guard let login else { return }
-//        
-//        navigationController?.pushViewController(login, animated: true)
         
-        pushView(viewController: LoginPage(), identifier: "LoginPage")
+        let login = pushView(viewController: LoginPage(), identifier: "LoginPage")
+        
+        navigationController?.pushViewController(login, animated: true)
     }
     
 }
 
 extension UIViewController {
-    func pushView<T: UIViewController>(viewController: T, identifier: String){
+    func pushView<T: UIViewController>(viewController: T, identifier: String) -> T{
         let x = storyboard?.instantiateViewController(withIdentifier: identifier) as? T
-        guard let x else { return }
-        navigationController?.pushViewController(x, animated: true)
+        guard let x else { return UIViewController() as! T}
+        
+        
+        return x
     }
 }
