@@ -9,6 +9,13 @@
 
 Welcome to **BookingHub**, the ultimate app for booking hotels and finding your perfect stay with ease and convenience. Our app ensures a seamless experience from browsing hotels to booking your ideal stay.
 
+## Tech Stack
+
+![Swift](https://img.shields.io/badge/Language-Swift-orange)
+![UIKit](https://img.shields.io/badge/Framework-UIKit-blue)
+![iOS](https://img.shields.io/badge/Platform-iOS-lightgrey)
+
+
 ## Features
 
 - **User-Friendly Interface**
